@@ -26,6 +26,4 @@ import kotlinx.parcelize.Parcelize
 
     }
 
-
-
 }

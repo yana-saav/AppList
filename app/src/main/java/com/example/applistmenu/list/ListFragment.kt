@@ -19,7 +19,6 @@ class ListFragment : Fragment() {
     lateinit var binding: FragmentListBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
     }
 
     override fun onCreateView(
@@ -37,7 +36,5 @@ class ListFragment : Fragment() {
         val rv = view.findViewById<RecyclerView>(R.id.menu_recycler)
         rv.adapter = adapter
         adapter.setData(ArticleModel.createDefultData())
-
     }
-
 }

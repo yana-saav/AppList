@@ -11,7 +11,6 @@ import com.example.applistmenu.databinding.MenuListItemBinding
 
 
 class ArticleAdapter(val onClick:(dish_item: ArticleModel)->Unit): RecyclerView.Adapter<ArticleAdapter.ArticleViewHolder>() {
-
     val list = ArrayList<ArticleModel>()
 
     fun setData(newList: List<ArticleModel>) {
@@ -33,7 +32,6 @@ class ArticleAdapter(val onClick:(dish_item: ArticleModel)->Unit): RecyclerView.
         holder.bindItem(currentElement)
 
     }
-
     override fun getItemCount(): Int {
         return list.size
     }
@@ -50,9 +48,5 @@ class ArticleAdapter(val onClick:(dish_item: ArticleModel)->Unit): RecyclerView.
             }
         }
 
-    }
-
-    interface Listener{
-        fun onClick(model: ArticleModel)
     }
 }
